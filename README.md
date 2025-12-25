@@ -32,7 +32,7 @@ It provides SHAP visualizations to help interpret prediction drivers.
 │   └── result.html                # Prediction results page
 ├── models/                        # Trained model artifacts (generated)
 ├── data/
-│   └── neonatal_adr_top20_new.xlsx # Training dataset
+│   └──dataset
 └── static/                        # XAI plots (generated)
 ```
 
@@ -81,12 +81,10 @@ Access at `http://localhost:5000`
 
 ### Interface Screenshots
 
-**Input Form** - Main prediction input interface
-![Input Form](https://drive.google.com/uc?id=1yhqdjHCRrBMndkI7zVQz758FN8SShxfY)
-
-
-**Results Page** - Prediction output with SHAP visualization
-![Results Page](https://drive.google.com/uc?id=1SUwoAXsESxb8aAf33lnNczZ2GK0ds6WG)
+| Screenshot | Description |
+|-----------|-------------|
+| ![Input Form](https://drive.google.com/uc?id=1yhqdjHCRrBMndkI7zVQz758FN8SShxfY) | **Input Form** - Main prediction input interface |
+| ![Results Page](https://drive.google.com/uc?id=1SUwoAXsESxb8aAf33lnNczZ2GK0ds6WG) | **Results Page** - Prediction output with SHAP visualization |
 
 
 ## Model Details
