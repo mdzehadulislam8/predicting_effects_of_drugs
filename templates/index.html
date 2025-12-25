@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neonatal Effect of Drug Prediction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 450px;
+      background: white;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    h2 { text-align: center; color: #333; }
+    label { font-weight: bold; margin-top: 10px; display: block; }
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button { background: #4CAF50; color: white; border: none; cursor: pointer; font-size: 16px; }
+    button:hover { background: #45a049; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Neonatal Effect of Drug Prediction </h2>
+    <form action="/predict" method="post">
+
+      <label>Product</label>
+      <select name="product" required>
+        <option value="" disabled selected>Select Product</option>
+        {% for product in products %}
+          <option value="{{ product }}">{{ product }}</option>
+        {% endfor %}
+      </select>
+
+      <label>Reason for Use</label>
+      <select name="reason" required>
+        <option value="" disabled selected>Select Reason</option>
+        {% for reason in reasons %}
+          <option value="{{ reason }}">{{ reason }}</option>
+        {% endfor %}
+      </select>
+
+      <label>Sex</label>
+      <select name="sex" required>
+        <option value="" disabled selected>Select Sex</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <label>Patient Age</label>
+      <input type="number" name="age" min="0" max="100" placeholder="Age in days" required>
+
+      <label>Patient Weight (KG)</label>
+      <input type="number" name="weight" min="0" max="5" step="0.1" placeholder="Weight in KG" required>
+
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>

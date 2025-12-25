@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+  <style>
+    body { font-family: Arial; background: #f2f2f2; text-align: center; padding: 50px; }
+    .card { background: white; padding: 20px; border-radius: 10px; display: inline-block; }
+    img { margin-top: 20px; width: 80%; }
+    a { text-decoration: none; color: #4CAF50; font-weight: bold; }
+    p{font-size: 20px;}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Prediction Results</h2>
+    <p><strong>Predicted Effect of Drug:</strong> {{ reaction }} ({{ reaction_prob }}%)</p>
+  
+    <h3>Explainable AI Visualization</h3>
+    <img src="{{ xai_image }}" alt="XAI Explanation">
+    <br><br>
+    <a href="/">🔙 Back to Home</a>
+  </div>
+</body>
+</html>
