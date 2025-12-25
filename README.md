@@ -81,15 +81,10 @@ Access at `http://localhost:5000`
 
 ### Interface Screenshots
 
-- **Input Form**: [See index.html page](screenshots/input_form.png) - Main prediction input interface
-- **Results Page**: [See result.html page](screenshots/results_page.png) - Prediction output with SHAP visualization
+- **Input Form**: [View Screenshot](https://drive.google.com/file/d/1yhqdjHCRrBMndkI7zVQz758FN8SShxfY/view?usp=drive_link) - Main prediction input interface
+- **Results Page**: [View Screenshot](https://drive.google.com/file/d/1SUwoAXsESxb8aAf33lnNczZ2GK0ds6WG/view?usp=drive_link) - Prediction output with SHAP visualization
 
-## Model Architecture
-
-### Classification Pipeline
-
-- **Input Features**: 5 features (medication, reason, sex, age, weight)
-- **PreprDetails
+## Model Details
 
 **Input Features**: 5 (medication, reason, sex, age, weight)
 
@@ -99,19 +94,19 @@ Access at `http://localhost:5000`
 - SHAP-based feature importance visualization
 
 **Output**: Probability scores + feature importance plot
-| Flask | ≥2.1 | Web framework |
-| pandas | ≥1.3 | Data manipulation |
+
+## Dependencies
+
 See `requirements.txt` for details:
 - Flask (web framework)
 - pandas, scikit-learn (data processing)
 - CatBoost (gradient boosting)
 - SHAP (explainability)
 - matplotlib (visualization)
-- joblib, openpyxl (utilities)ng columns:
+- joblib, openpyxl (utilities)
 
-| Column | Type | Description |
-|--------|------|-------------|
-| suspect_product_active_ingredients | string | Medication name/ingredient |
+## Data Format
+
 Required Excel columns:
 - `suspect_product_active_ingredients`: Medication name
 - `reason_for_use`: Clinical indication
@@ -120,8 +115,11 @@ Required Excel columns:
 - `sex`: Patient gender (M/F)
 - `patient_age`: Age (numeric)
 - `patient_weight`: Weight in kg
-- **Data Path**: `DATA_PATH = "data/neonatal_adr_top20_new.xlsx"`
-- **settings (in code):
+
+## Configuration
+
+Key settings (in code):
+- `DATA_PATH = "data/neonatal_adr_top20_new.xlsx"`
 - `MODEL_DIR = "models"`
 - Flask debug mode enabled for development
 
@@ -132,22 +130,14 @@ Required Excel columns:
 ⚠️ **Data Privacy**: Ensure compliance with HIPAA, GDPR, and institutional regulations before deployment.
 
 ⚠️ **Dataset Access**: The dataset is proprietary and requires permission. Contact maintainers for access.
-This project is developed for educational and research purposes. Ensure compliance with your institution's policies and healthcare regulations before clinical deployment.
 
-## Support & Contact
+## License & Disclaimer
 
-For issues, questions, or collaborations:
-- Review the code comments and docstrings
-- Check the project structure and file descriptions
-- Verify dataset format and file paths match expectations
-
-## Disclaimer
-
-This application is intended for research and educational purposes. It should not be used for clinical decision-making without proper validation, clinical oversight, and regulatory approval. Always consult qualified healthcare professionals for medical decisions.
+Developed for educational and research purposes. Not intended for clinical decision-making without proper validation and oversight.
 
 ---
 
-**Last Updated**: December 2025  
+**Last Updated**: December 2025 | **Status**: Active Development  
 **Status**: Active Development
  & Disclaimer
 
