@@ -83,11 +83,11 @@ Access at `http://localhost:5000`
 
 **Input Form** - Main prediction input interface
 ![Input Form](https://drive.google.com/uc?id=1yhqdjHCRrBMndkI7zVQz758FN8SShxfY)
-[View Full Size](https://drive.google.com/file/d/1yhqdjHCRrBMndkI7zVQz758FN8SShxfY/view?usp=drive_link)
+
 
 **Results Page** - Prediction output with SHAP visualization
 ![Results Page](https://drive.google.com/uc?id=1SUwoAXsESxb8aAf33lnNczZ2GK0ds6WG)
-[View Full Size](https://drive.google.com/file/d/1SUwoAXsESxb8aAf33lnNczZ2GK0ds6WG/view?usp=drive_link)
+
 
 ## Model Details
 
