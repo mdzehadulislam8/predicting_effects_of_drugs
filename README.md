@@ -18,7 +18,7 @@ Uses SHAP visualizations to explain model predictions and highlight feature impo
 - Label encoding for categorical feature handling
 - Responsive HTML frontend with results visualization
 
-## File Organization
+## Project Structure
 
 | Directory | File | Purpose |
 |-----------|------|---------|
@@ -51,8 +51,9 @@ Uses SHAP visualizations to explain model predictions and highlight feature impo
    The training dataset is **proprietary clinical data** (not included in this repository).
    
    **To request dataset access, email:**
-   - Md. Abdullah Al Moin: [midul7714@gmail.com](mailto:midul7714@gmail.com)
    - Md. Zehadul Islam: [gg.solve.zehadul999@gmail.com](mailto:gg.solve.zehadul999@gmail.com)
+   - Md. Abdullah Al Moin: [midul7714@gmail.com](mailto:midul7714@gmail.com)
+
    
    **Include in request:** Your name, institution, and research purpose. Access granted for research/education only after approval.
 
